@@ -111,21 +111,3 @@ int rocketsys_filter(const RocketCollection *src, RocketCollection *dest, const 
 	
 	return ERR_SUCCESS;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
