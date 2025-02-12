@@ -27,3 +27,46 @@ Rocket Realm is an interactive experience where users can add, remove, filter, a
     Bit Manipulation: Utilized for efficient filtering and status management, enabling compact and optimized logic.
     Dynamic Data Management: Modular design allows seamless additions, updates, and filtering of rockets.
     C Programming Expertise: Demonstrates proficiency in handling low-level operations and memory-efficient programming.
+
+# Automated Testing
+To ensure reliability and correctness, Rocket Realm includes automated unit tests using CUnit.
+
+## Running Unit Tests
+1. Compile the tests by running the following command in the terminal:
+   make test
+   This will generate the test executable named test_rocketsys.
+
+2. Run the test suite by executing:
+   make runtest
+   This will execute all unit tests and display the results in the terminal.
+
+3. Expected output:
+   Running Rocket System Tests...
+   [✔] Rocket Initialization - PASSED
+   [✔] Set and Validate Status - PASSED
+   [✔] Data Set & Get - PASSED
+   [✔] Rocket Collection Initialization - PASSED
+   [✔] Appending to Collection - PASSED
+   [✔] Finding a Rocket - PASSED
+   [✔] Removing a Rocket - PASSED
+   [✔] Filtering Rockets - PASSED
+
+## Understanding the Commands:
+- make test compiles the unit tests into an executable.
+- make runtest runs the unit tests and displays results.
+- make clean removes compiled files and resets the environment.
+
+## Automated Testing Includes:
+- Unit Testing validates individual functions in CUnit.
+- Test Suites group related test cases for structured validation.
+- Assertions verify expected vs. actual results for correctness.
+- Debugging with GDB ensures accurate error tracing and system stability.
+If a test fails, check the output for errors and debug using:
+   gdb ./test_rocketsys
+Then use:
+   run
+   bt
+to inspect the stack trace and locate the issue.
+
+By following these steps, you can ensure Rocket Realm functions correctly and efficiently.
+
